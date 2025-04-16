@@ -1,0 +1,46 @@
+# 🧠 Prompts Used in Data Ingestion Web App
+
+This file contains the recorded prompts and queries used during the development of the bidirectional data ingestion tool between ClickHouse and Flat Files.
+
+---
+
+## 💬 ChatGPT Prompts
+
+### ✅ Feature Planning & Implementation
+- "Create me a README file by fetching all the above info including setup, configuration, and run instructions."
+- "How to implement multi-table JOIN support in a ClickHouse-backed web ingestion tool?"
+- "Give me a short summary of how the backend and frontend components should be structured."
+
+### ⚙️ Optional Features
+- "1. Progress Bar: Add a visual progress bar to show the ingestion progress..."
+- "2. Data Preview: Add an endpoint to fetch the first 100 records from ClickHouse..."
+
+---
+
+## 🛠️ Backend Development
+
+### 🔐 ClickHouse Handler (clickhouse_handler.py)
+- "How to connect to ClickHouse using JWT authentication in Python?"
+- "How to write JOIN queries dynamically in Python based on user input?"
+
+### 📂 Flat File Handler (flatfile_handler.py)
+- "How to upload a CSV file and write its data into ClickHouse with data type mapping?"
+- "How to use pandas to validate CSV file schema and ingest it into a database?"
+
+---
+
+## 🧪 Testing & Debugging
+
+- "How to test ClickHouse ingestion using uk_price_paid dataset?"
+- "How to verify record counts in ClickHouse after data ingestion?"
+
+---
+
+## 📦 CLI / Terminal Commands
+
+### Python Backend
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
