@@ -31,7 +31,55 @@ This app supports JWT-authenticated ClickHouse access, custom column selection, 
 project/ │ ├── backend/ │ ├── app.py # Main backend server │ ├── clickhouse_handler.py # Handles ClickHouse auth, SELECT/JOIN, CSV export │ ├── flatfile_handler.py # Reads CSV, validates types, writes to ClickHouse │ ├── test_ingestion.py # Sample test cases and ingestion flows │ ├── frontend/ │ └── src/ │ ├── components/ # React components (Forms, Preview, ProgressBar) │ ├── App.jsx # Root component │ ├── index.js # React entry point │ └── README.md
 
 ---
+🧪 Testing
+Use example datasets provided by ClickHouse:
 
+uk_price_paid
+
+ontime
+
+✅ Recommended Test Cases:
+Single ClickHouse table → Flat File (selected columns)
+
+Flat File → New ClickHouse table
+
+(Bonus) Joined ClickHouse tables → Flat File
+
+Connection/authentication failure handling
+
+(Optional) Data preview before ingestion
+
+🖥️ Key UI Features
+Source & Target Type Selection (ClickHouse or Flat File)
+
+Dynamic form rendering based on source type
+
+Table & Column selection UI
+
+JOIN conditions input (if multiple tables selected)
+
+CSV Upload (for Flat File)
+
+Ingestion Progress Indicator
+
+Real-time status and final record count
+
+🤝 Contributions
+Feel free to fork and enhance the app for:
+
+Drag-and-drop CSV upload
+
+Advanced JOIN builder
+
+Error reporting UI
+
+Upload logs
+
+📄 License
+MIT License – Open to use, modify, and share.
+
+✨ Developed By
+Yaseen – Full-stack Developer | GitHub | LinkedIn
 ## ⚙️ Setup & Configuration
 
 ### 🧩 Prerequisites
